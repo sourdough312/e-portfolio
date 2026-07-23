@@ -55,11 +55,12 @@ li {
 nav {
   height: 100px;
   width: 100%;
-  min-width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 12px;
 }
 
 .nav__link--list {
@@ -86,7 +87,7 @@ nav {
 }
 
 .personal__logo {
-  font-size: 24ox;
+  font-size: 24px;
   color: #6030b1;
   margin: 0 12px;
   font-weight: bold;
@@ -96,6 +97,11 @@ nav {
 
 #about-me {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me__info {
   display: flex;
   flex-direction: column;
 }
@@ -137,4 +143,14 @@ nav {
   color: #242424;
   text-decoration: none;
   padding: 0 16px;
+}
+
+.about-me__img--container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.about-me__img {
+  width: 100%;
 }
